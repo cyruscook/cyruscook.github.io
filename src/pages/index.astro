@@ -1,0 +1,14 @@
+---
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="canonical" href={canonicalURL} />
+    <title>cyruscook.github.io</title>
+  </head>
+  <body></body>
+</html>

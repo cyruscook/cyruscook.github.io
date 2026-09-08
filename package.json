@@ -1,0 +1,17 @@
+{
+  "name": "cyruscook.github.io",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "7.3.2"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
