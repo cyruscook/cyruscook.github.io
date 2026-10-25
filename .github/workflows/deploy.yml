@@ -25,8 +25,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: "24.22.1"
           cache: npm
+      - name: Verify patched Node.js release
+        run: node -e "if (process.versions.node !== '24.22.1') throw new Error('Unexpected Node.js release'); console.log(process.version)"
+
       - name: Install dependencies
         run: npm ci
       - name: Build site
